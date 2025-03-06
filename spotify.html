@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="icon" href="logo.png"/>
+    <link rel="stylesheet" href="spotify.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <div class="threeicons">
+            <div class="spotifylogo">
+              <i class="bx bxl-spotify"></i>
+              <a href="#">Spotify</a>
+            </div>
+            <div class="homeandsearch">
+              <li>
+                <a href="#"><i class="bx bxs-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-search"></i>Search</a>
+              </li>
+            </div>
+          </div>
+          <div class="library">
+            <div class="your_library_1">
+              <i class="bx bx-library"></i>
+              <div style="align-self: center;">Song library</div>
+              <a href="#"><i class="bx bx-plus"></i></a>
+            </div>
+            <div class="your_library">
+              <div class="create_browse_mix">
+                <div class="create_playlist">
+                  <ul>
+                  </ul>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="library">
+            <div class="your_library_1">
+              <i class="bx bx-library"></i>
+              <div style="align-self: center;">Your Favorites</div>
+              <a href="#"><i class="bx bx-plus"></i></a>
+            </div>
+            <div class="your_library">
+              <div class="create_browse_mix">
+                <div class="favorite_songs">
+                  <ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="cookies">
+            <div class="cookies_container">
+              <div><a href="#">Legal</a></div>
+              <div><a href="#">Safty&privacy</a></div>
+              <div><a href="#">Privacy policy</a></div>
+              <div><a href="#">Cookies</a></div>
+              <div><a href="#">About ads</a></div>
+              <div><a href="#">Accecibility</a></div>
+            </div>
+            <div class="x"><a href="#">Cookies</a></div>
+            <button class="lang">
+              <i class="bx bx-globe"></i><span>English</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="header">
+          <header>
+            <div class="signup_login">
+              <button class="nav_buttons">
+                <svg height="16px" data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                  <path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path>
+                </svg>
+              </button>
+              <button class="nav_buttons">
+                <svg height="16px"data-encore-id="icon"role="img"aria-hidden="true"class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF"viewBox="0 0 16 16">
+                  <path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="signup_login">
+              <button id="signup">Sign up</button>
+              <button id="login">log in</button>
+            </div>
+          </header>
+        </div>
+        <div class="cards">
+          <h2 style="width: 200px; margin: 5rem 1rem 1rem 1.5rem;">India's Best</h2>
+          <main>
+            <div class="all_cards">
+              <div class="img">
+                <img src="panjabi 101.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button >
+                    <!-- data-* attribute in HTML is a custom data attribute that allows you to store additional information in HTML elements. You can use it to store the folder name dynamically and retrieve it in JavaScript. -->
+                    <img data-folder="panjabi" src="Spotify-Play-green-Button.png" alt="no" height="48px">
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  Panjabi 101
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="kk.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button>
+                    <img data-folder="kk" src="Spotify-Play-green-Button.png" alt="no" height="48px">
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  K K Hits
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="bolywood central.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button>
+                    <img data-folder="bolywood" src="Spotify-Play-green-Button.png" alt="no" height="48px">
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  Bollywood Central
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="i pop superhit.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button>
+                    <img data-folder="ipop" src="Spotify-Play-green-Button.png" alt="no" height="48px">
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  I Pop Superhit
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="rap91.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button>
+                    <img data-folder="rap91" src="Spotify-Play-green-Button.png" alt="no" height="48px">
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  Rap 91
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="toly.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button><img src="Spotify-Play-green-Button.png" alt="no" height="48px"></button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  Tollywood Pearls
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="koly.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button><img src="Spotify-Play-green-Button.png" alt="no" height="48px"></button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  Kollywood Cream
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="leo.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button><img src="Spotify-Play-green-Button.png" alt="no" height="48px"></button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  Fantastic Leo
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="moly.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button><img src="Spotify-Play-green-Button.png" alt="no" height="48px"></button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  Mollywood Gold
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+            <div class="all_cards">
+              <div class="img">
+                <img src="radar india.jpeg" alt="no" height="155px" />
+                <div class="hover_play_btn">
+                  <button><img src="Spotify-Play-green-Button.png" alt="no" height="48px"></button>
+                </div>
+              </div>
+              <div>
+                <h4 class="card-title" style="padding-bottom: 5px">
+                  Radar India
+                </h4>
+                <p style="font-size: 12px; font-weight: 600; opacity: 0.7;">
+                  Ultimate 101 Punjabi Hits with Shubh
+                </p>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="footer">
+          <footer>
+            <div class="diffrent_links">
+              <div class="company">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Jobs</a>
+                <a href="#">For the Record</a>
+              </div>
+              <div class="community">
+                <h4>Community</h4>
+                <a href="#">Artist</a>
+                <a href="#">Devlopers</a>
+                <a href="#">Advertising</a>
+                <a href="#">Invester</a>
+                <a href="#">Vendors</a>
+              </div>
+              <div class="usefull_links">
+                <h4>Usefull links</h4>
+                <a href="#">Support</a>
+                <a href="#">Free Mobile App</a>
+              </div>
+              <div class="social_media_icons" style="margin-left: 0px;">
+                <button>
+                  <svg role="img"height="16"width="16"aria-hidden="true"viewBox="0 0 16 16"data-encore-id="icon"class="Svg-sc-ytk21e-0 haNxPq">
+                    <path d="M16 8a8 8 0 10-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0016 8z"></path>
+                  </svg>
+                </button>
+                <button>
+                  <svg height="16px"role="img"height="16"width="16"aria-hidden="true"viewBox="0 0 16 16"data-encore-id="icon"class="Svg-sc-ytk21e-0 hOjEcl">
+                    <path d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 01-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 01-.921-.599 2.477 2.477 0 01-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 01.92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 00-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 002.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 00-.923-1.418A3.928 3.928 0 0013.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z"></path>
+                    <path d="M8 3.892a4.108 4.108 0 100 8.216 4.108 4.108 0 000-8.216zm0 6.775a2.668 2.668 0 110-5.335 2.668 2.668 0 010 5.335zm4.27-5.978a.96.96 0 100-1.92.96.96 0 000 1.92z"></path>
+                  </svg>
+                </button>
+                <button>
+                  <svg role="img"height="16"width="16"aria-hidden="true"viewBox="0 0 16 16"data-encore-id="icon"class="Svg-sc-ytk21e-0 hOjEcl" >
+                    <path d="M13.54 3.889a2.968 2.968 0 001.333-1.683 5.937 5.937 0 01-1.929.738 2.992 2.992 0 00-.996-.706 2.98 2.98 0 00-1.218-.254 2.92 2.92 0 00-2.143.889 2.929 2.929 0 00-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 01-3.484-.932A8.536 8.536 0 011.532 2.54a2.993 2.993 0 00-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 01-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 001.739 1.048 2.937 2.937 0 01-1.365.056 2.94 2.94 0 001.063 1.5 2.945 2.945 0 001.77.603 5.944 5.944 0 01-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 005.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 001.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 00.738-1.988 8.417 8.417 0 00.246-2.429 6.177 6.177 0 001.508-1.563c-.56.249-1.14.407-1.738.476z"></path>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </footer>
+          <hr style="width: 1080px; margin-left: 20px" />
+          <div style="font-size: 13px; margin: 1.3rem">© 2024 Spotify AB</div>
+          <br><br><br><br><br>
+        </div>
+      </div>
+      <div class="musicplayer">
+        <div class="photo_name_music">
+          <div class="photo">
+            <a href="#"><img src="dunki img.jpg" alt="dunki logo" height="90px"/></a>
+          </div>
+          <div class="z">
+            <div class="music_name"></div>
+          </div>
+        </div>
+        <div class="heart">
+          <button id="heart">
+              <svg class="feather feather-heart" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+          <button>
+        </div>
+        <div class="progracebar">
+          <div class="music_buttons">
+            <div class="previous">
+              <button class="btn"><svg height="16px" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z"></path><path d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z"></path></svg></button>
+              <button id="previousbtn" class="btn"><svg height="16px" data-encore-id="icon"  role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI" ><path d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z"></path></svg></button>
+            </div>
+            <div class="middle">
+              <button id="playbutton">
+                <img src="playicon.png" alt="play" height="50px" style="cursor: pointer;"/>
+              </button>
+            </div>
+            <div class="next">
+              <button id="nextbtn">
+                <svg height="16px" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                  <path d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z"></path>
+                </svg>
+              </button>
+              <button class="loopbtn">
+                <svg id="loopsvg" height="16px"data-encore-id="icon"role="img"aria-hidden="true"viewBox="0 0 16 16"class="Svg-sc-ytk21e-0 dYnaPI">
+                  <path d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="m">
+            <div class="start_time">0:00</div>
+            <input type="range" name="volume" id="music_bar" max="100" min="0" value="0"/>
+            <!-- value sets default value -->
+            <div class="end_time">0:00</div>
+          </div>
+        </div>
+        <div class="all_controlls">
+          <div class="controll">
+            <button class="">
+              <svg height="16px" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                <path d="M11.196 8 6 5v6l5.196-3z"></path>
+                <path
+                  d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z"></path>
+              </svg>
+            </button>
+            <button class="">
+              <svg height="16px" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                <path
+                  d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 0 0 4.74 9.075L2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045 3.505-3.99z"></path>
+              </svg>
+            </button>
+            <button class="">
+              <svg height="16px" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                <path
+                  d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z"></path>
+              </svg>
+            </button>
+            <button class="">
+              <svg  height="16px" data-encore-id="icon" role="presentation" aria-hidden="true" class="Svg-sc-ytk21e-0 dYnaPI" viewBox="0 0 16 16">
+                <path
+                  d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25h-6.5zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z"></path>
+                <path
+                  d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+              </svg>
+            </button>
+            <div class="volume">
+              <button class="volumebtn">
+                <svg xmlns="http://www.w3.org/2000/svg" id="volumefull" class="" width="24" height="24" viewBox="0 0 24 24" style="transform: msFilter"><path d="M16 21c3.527-1.547 5.999-4.909 5.999-9S19.527 4.547 16 3v2c2.387 1.386 3.999 4.047 3.999 7S18.387 17.614 16 19v2z"></path><path d="M16 7v10c1.225-1.1 2-3.229 2-5s-.775-3.9-2-5zM4 17h2.697l5.748 3.832a1.004 1.004 0 0 0 1.027.05A1 1 0 0 0 14 20V4a1 1 0 0 0-1.554-.832L6.697 7H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h3c.033 0 .061-.016.093-.019a1.027 1.027 0 0 0 .38-.116c.026-.015.057-.017.082-.033L12 5.868v12.264l-4.445-2.964c-.025-.017-.056-.02-.082-.033a.986.986 0 0 0-.382-.116C7.059 15.016 7.032 15 7 15H4V9z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="volumemute" class="hidden" width="24" height="24" viewBox="0 0 24 24" style="transform: msFilter"><path d="m21.707 20.293-2.023-2.023A9.566 9.566 0 0 0 21.999 12c0-4.091-2.472-7.453-5.999-9v2c2.387 1.386 3.999 4.047 3.999 7a8.113 8.113 0 0 1-1.672 4.913l-1.285-1.285C17.644 14.536 18 13.19 18 12c0-1.771-.775-3.9-2-5v7.586l-2-2V4a1 1 0 0 0-1.554-.832L7.727 6.313l-4.02-4.02-1.414 1.414 18 18 1.414-1.414zM12 5.868v4.718L9.169 7.755 12 5.868zM4 17h2.697l5.748 3.832a1.004 1.004 0 0 0 1.027.05A1 1 0 0 0 14 20v-1.879l-2-2v2.011l-4.445-2.964c-.025-.017-.056-.02-.082-.033a.986.986 0 0 0-.382-.116C7.059 15.016 7.032 15 7 15H4V9h.879L3.102 7.223A1.995 1.995 0 0 0 2 9v6c0 1.103.897 2 2 2z"></path></svg>
+              </button>
+              <input type="range" name="volume" id="volume_bar" max="100" min="0" value="100"/>
+              <!-- value sets default value -->
+            </div>
+            <button class="">
+              <svg height="16px" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                <path
+                  d="M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16V2.45z"></path>
+                <path
+                  d="M15.25 9.007a.75.75 0 0 1 .75.75v4.493a.75.75 0 0 1-.75.75H9.325a.75.75 0 0 1-.75-.75V9.757a.75.75 0 0 1 .75-.75h5.925z"></path>
+              </svg>
+            </button>
+            <button class="">
+              <svg height="16px" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                <path
+                  d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="spotify.js"></script>
+</html>

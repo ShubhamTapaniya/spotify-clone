@@ -1,0 +1,694 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.sidebar{ 
+    overflow: hidden;
+    background-color: black;
+    width: 25vw;
+    height: 100vh;
+    margin: 1vh .5vw 1vh 1vw;
+    border-radius: 1rem; /* means 16px */
+}
+.main{
+    width: 75vw;
+    height: 100vh;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: #121212;
+    border-radius: 1rem;
+}
+
+i{
+    font-size: 1.5rem;
+    vertical-align: middle;
+    /* to align anchor tag with icon */
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    vertical-align: middle; 
+    /* to align anchor tag with icon  */
+}
+.threeicons{
+    background-color: #121212;
+    border-radius: .5rem;
+}
+.spotifylogo{
+    line-height: 44px;
+    font-weight: 600;
+    margin: 5px 15px;
+}
+.homeandsearch{
+    font-weight: 600;
+    line-height: 40px;
+    margin: 8px 27px;
+}
+.homeandsearch li a{
+    line-height: 45px;
+    opacity:0.7 ;
+}
+.homeandsearch li a:hover{
+    opacity: 1;
+} 
+.homeandsearch li a i{
+    margin-right:2rem;
+}
+.your_library{
+    background-color: #121212;
+    line-height: 45px;
+    font-weight: 600;
+    border-radius: .5rem;
+    margin: 10px 0 0px 0;
+    width: 376px;
+}
+.your_library_1{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    /* line-height: 55px; */
+    font-weight: 600;
+    width: auto;
+    /* position: fixed; */
+    top: 100; /* Stick to the top */
+}
+.your_library_1 i{
+    padding: .7em;
+    align-self: center;
+    font-weight: 500;
+    opacity: 0.7;
+    margin-left:1rem ;
+    margin-right:1rem ;
+    /* overflow-y: hidden; */
+}
+.your_library_1 i:hover{
+    opacity: 1;
+}
+.your_library_1 a i{
+    font-weight: 600;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    opacity: 0.7;
+    overflow: hidden;
+}
+.your_library_1 span{
+    padding-left: .7em;
+    padding-right: 1.2em;
+    vertical-align: middle;
+}
+.create_playlist{
+    background-color: #252425;
+    line-height: 30px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 8px 27px;
+    width: 20vw;
+}
+.create_playlist li{
+    height: 60px;
+}
+.create_playlist_button{
+    background-color: white;
+    color: black;
+    border-radius: 5rem;
+    padding: 0.5em 1em ;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+.create_playlist_button:hover{
+    transform: scale(1.05);
+}
+.browse_podcast{
+    background-color: #252425;
+    line-height: 30px;
+    font-weight: 600;
+    border-radius: .5rem;
+    padding: 8px 27px;
+    width: 20vw;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.browse_podcast_button{
+    background-color: white;
+    color: black;
+    border-radius: 5rem;
+    padding: 0.5em 1em 0.5em 1em ;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+.browse_podcast_button:hover{
+    transform: scale(1.05);
+}
+.create_browse_mix {
+    padding: 0 0.5em;
+    max-height: 11rem;
+    overflow: visible;
+}
+.cookies{
+    background: #121212;
+    height: 14rem;
+}
+.cookies a{
+    opacity: 0.7;
+}
+.cookies a:hover{
+    opacity: 1;
+}
+.cookies_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+}
+.cookies_container a{
+    padding-right: 2rem;
+    font-size: 10px;
+    line-height: 1.8rem; 
+}
+.x{
+    margin-bottom: 25px;
+}
+.x a{
+    font-size: 12px;
+    line-height: 2rem; 
+    margin-left: 1rem;
+}
+.lang{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 1.5rem;
+}
+
+/* main part of spotify  */
+
+/* musicplayer of spotify  */
+.musicplayer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    margin-left: 10px;
+}
+.photo_name_music{
+    display: flex;
+    height: 10vh;
+    width: 30%;
+    overflow: hidden;
+    justify-content: center;
+}
+.photo{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 5px;
+    margin: 0 1rem 1rem 1rem;
+    overflow: hidden;
+}
+.z{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music_artist_name{
+    font-size: 0.7rem;
+}
+.like{
+    display: flex;
+    align-self: center;
+    background-color: black;
+    border: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 1rem;
+}
+.progracebar{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 40%;
+
+}
+
+svg {
+    
+    fill: white; /*icons colour can be set by this*/
+    background-color: black;
+    padding: 0.5rem;
+}
+
+.all_controlls{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 30%;
+    
+}
+.controll{
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+}
+.controll svg{
+    opacity: 0.7;
+}
+.controll svg:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+button{
+    border: none;
+    background-color: black;
+    font-size: 1rem;
+}
+.volume{
+    display: flex;
+    /* to put center range and volume logo  */
+}
+#volume_bar{
+    width: 100px;
+    height: 4px;
+    align-self: center;
+    overflow: hidden;
+}
+.m{
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+    font-size : 12px;
+    overflow: hidden;
+}
+#music_bar{
+    width: 505px;
+    overflow: hidden;
+}
+.music_buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.music_buttons img{
+    transform: scale(0.9);
+}
+.music_buttons img:hover{
+    transform: scale(1);
+}
+.music_buttons svg{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.music_buttons svg:hover{
+    opacity: 1;
+}
+.previous {
+    display: flex;
+    justify-content: end;
+    height: auto;
+    width: 225px;
+    /* background-color: red; */
+}
+.next {
+    display: flex;
+    justify-content:start;
+    height: auto;
+    width: 225px;
+    /* background-color: red; */
+}
+.nav_buttons{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    height: 4rem;
+    width: 1100px;
+    position: fixed;
+    background-color: #121212;
+    /* background-color is neccesory without that header will be transparant */
+    z-index: 1000;
+    top: 0; 
+}
+#login {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    height: 48px;
+    width: 110px;
+    border-radius: 5rem;
+}
+#signup{
+    font-weight: 700;
+    margin-right:1rem;
+}
+.signup_login {
+    height: 2rem;
+    width: 200px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.signup_login button:hover{
+    transform: scale(1.1);
+}
+.signup_login svg:hover{
+    background-color: #2e2d2d;
+}
+.social_media_icon{
+    background-color: #252425;
+}
+footer{
+    height: auto;
+    justify-self: center;
+}
+.diffrent_links {
+    height: 200px;
+    display: flex;
+    width: auto;
+    padding: 2rem;
+}
+.diffrent_links a{
+    opacity: 0.7;
+}
+.diffrent_links a:hover{
+    opacity: 1;
+}
+.company{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+.company a{
+    font-size: 13px;
+    margin-left: 10px;
+
+}
+.community{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+.community a{
+    font-size: 13px;
+    margin-left: 10px;
+
+}
+.usefull_links{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+.usefull_links a{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.social_media_icons{
+    height: 200px;
+    width: 200px;
+}
+.social_media_icons button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+.social_media_icons svg{
+    background-color: black;
+}
+.social_media_icons svg:hover{
+    background-color: #3e3e3e;
+}
+
+main{
+    padding-left: 1rem;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+.all_cards{
+    height: 250px;
+    width: 155px;
+    display: flex;
+    background-color: #1b1b1b;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: auto;
+}
+button{
+    overflow: hidden;
+}
+.img{
+    overflow: hidden;
+    height: 155px;
+    width: 155px;
+    background-size: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+} 
+.all_cards:hover{
+    background-color: #2e2d2d;
+}
+.all_cards:hover .hover_play_btn{
+    position: relative;
+    bottom: 55px;
+    left: 105px;
+    opacity: 1; 
+}   
+.header{
+    position: sticky;
+    z-index: 10;
+}
+
+/* scrollbar setting */
+::-webkit-scrollbar{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+    background-color: rgba(68, 64, 64, 0.7);
+    cursor: pointer;
+}
+.hover_play_btn{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-size: cover;
+    position: relative;
+    bottom: 0px;
+    left: 105px;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+    opacity: 0; 
+    box-shadow:0px 5px 20px 0px black;
+    
+}
+.hover_play_btn img{
+    height: 50px;
+    width: 50px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE CARDS */
+@media (max-width:1400px) {
+    main{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
+    }
+    header{
+        width:max-content;
+    }
+    .social_media_icons{
+        margin-left: 250px;
+    }   
+}
+@media (max-width:1450px) {
+    header{
+        width:1000px;
+    }
+    .social_media_icons{
+        margin-left: 200px;
+    }   
+}
+@media (max-width:1310px) {
+    header{
+        width:950px;
+    }
+    .social_media_icons{
+        margin-left: 170px;
+    }   
+}
+@media (max-width:1250px) {
+    header{
+        width:900px;
+    }
+    .social_media_icons{
+        margin-left: 130px;
+    }   
+}
+@media (max-width:1206px){
+    .your_library_1{
+        width: inherit;
+    }
+}
+@media (max-width:1200px) {
+    header{
+        width:850px;
+    }
+    .social_media_icons{
+        margin-left: 100px;
+    }   
+}
+@media (max-width:1125px) {
+    main{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    header{
+        width:800px;
+    } 
+    .social_media_icons{
+        margin-left: 30px;
+    }  
+
+}
+@media (max-width:850px) {
+    main{
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+    header{
+        width:600px
+    }   
+}
+@media (max-width:580px) {
+    main{
+        grid-template-rows: repeat(6,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+    header{
+        width:400px;
+    }   
+}
+.start_time,.end_time{
+    margin-left:5px;
+    margin-right:5px;
+}
+#music_bar{
+    appearance: none;
+    background-color: transparent;
+    height: 15px;
+}
+#music_bar::-webkit-slider-runnable-track{
+    /* background-color: white; */
+    border-radius: 100px;
+    height: 3.5px;
+    background: linear-gradient(to right, #1DB954 var(--progress,0%), #ccc var(--progress,0%));
+    /* var(--progress, 0%) ensures that before any song plays, the seekbar has a default value of 0% (i.e., the bar is fully gray)
+        Once playback starts, JavaScript updates --progress dynamically
+    */
+}
+#music_bar::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #1bd760;
+    margin-top: -5px;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    transition: transform 1s ease-out;  /* Smooth thumb movement */
+}
+
+#music_bar:active::-webkit-slider-thumb {
+    transform: scale(1.2);  /* Slightly enlarges when dragging */
+}
+
+#volume_bar{
+    appearance: none;
+    background-color: transparent;
+    height: 15px;
+}
+#volume_bar::-webkit-slider-runnable-track{
+    border-radius: 100px;
+    height: 3.5px;
+    background: linear-gradient(to right, #1DB954 var(--volume,0%), #ccc var(--volume,0%));
+    /* var(--progress, 0%) ensures that before any song plays, the seekbar has a default value of 0% (i.e., the bar is fully gray)
+        Once playback starts, JavaScript updates --progress dynamically
+    */
+}
+#volume_bar::-webkit-slider-thumb{
+    appearance: none;/* now we can make change  */
+    background-color: #1bd760;
+    margin-top: -5px;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+}
+label svg{
+    fill: #1bd760;
+    padding: none;
+}
+.heart {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100%; /* Ensure it takes the full height of its container */
+}
+#fillgreen{
+    fill: #1bd760;
+}
+.heart svg{
+    fill: transparent;
+}
+.create_playlist li{
+    border: 2px solid white;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.favorite_songs li{
+    border: 2px solid white;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.volumebtn svg{
+    fill: white;
+}
+.hidden{
+    display: none;
+}
